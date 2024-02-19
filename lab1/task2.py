@@ -11,7 +11,7 @@ def main():
     na = (P * Va) / (R * T)
     nb = (P * Vb) / (R * T)
     answer = na * R * math.log((Va + Vb) / Va) + nb * R * math.log((Va + Vb) / Vb)
-    print("Изменение энтропии: ", round(answer, 4), "Дж/(Моль*К)")
+    print("Изменение энтропии: ", round(answer, 4), "Дж/К")
 
 
 if __name__ == "__main__":
