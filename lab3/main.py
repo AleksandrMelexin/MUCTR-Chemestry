@@ -1,4 +1,7 @@
 # аривнт 14
+from scipy.optimize import minimize
+import math
+import numpy as np
 import math
 
 
@@ -31,8 +34,27 @@ for i in range(len(P)):
     gamma2.append(gamma_calc(1 - X1[i], 1 - Y1[i], P[i], P2))
     g.append(gipps(X1[i], gamma1[i], gamma2[i]))
 
+
+def func(x, x1=X1, g=g):
+    R = 8.3144
+    T = 298.15
+    A1, A2 = x[0], x[1]
+    sum = 0.0
+    for i in range(0, 5):
+        x2 = 1 - x1[i]
+        print(x2 + A2 * x1[i])
+        g_r = R * T * (-x1[i] * math.log(x1[i] + A1 * x2) - x2 * math.log(x2 + A2 * x1[i]))
+        sum += abs(g[i] - g_r)
+    return sum
+
+
+res = minimize(func, x0=[0.5, 0.5], method='Nelder-Mead', tol=1e-6)
+'''
 print(P1)
 print(P2)
 print(*gamma1)
 print(*gamma2)
 print(*g)
+'''
+print(res.message)
+print(res.x)
