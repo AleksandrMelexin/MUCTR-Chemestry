@@ -12,8 +12,6 @@ from matplotlib import pyplot as plt
 
 def get_dataset():
     data = pd.read_csv("data.csv")
-    print(data)
-    # data=data[data["GL"]==0]
     X = data[["Temperature", "Pressure"]].to_numpy()
     y = data[["Density"]].to_numpy()  # ,"GL"
     return X, y
@@ -31,7 +29,6 @@ def get_model(n_inputs, n_outputs):
 
 def evaluate_model(X, y):
     n_inputs, n_outputs = X.shape[1], y.shape[1]
-    print("Inputs = ", n_inputs, " Outputs = ", n_outputs)
     cv = RepeatedKFold(n_splits=5, n_repeats=1, random_state=22527)
     i = 0
     MAPE = 300
@@ -52,14 +49,6 @@ def evaluate_model(X, y):
         if (mape < MAPE):
             MAPE = mape
             model2 = model
-            print("Saving model...")
-        print('fold: %d' % i)
-        print('> MAE train: %.3f' % mae_train)
-        print('> MAE test: %.3f' % mae_test)
-        print('> MAPE train: %.3f' % mape_train)
-        print('> MAPE test: %.3f' % mape_test)
-        print('> MAE total: %.3f' % mae)
-        print('> MAPE total: %.3f' % mape)
     plt.show()
     return mae, mape, model2
 
@@ -89,4 +78,4 @@ X, minsX, maxsX = normalize_data(X)
 y, minsy, maxsy = normalize_data(y)
 mae, mape, model = evaluate_model(X, y)
 model.save('ML.keras')
-print('MAE: %.3f MAPE: %.3f' % (mae, mape))
+print(model.predict(X))
