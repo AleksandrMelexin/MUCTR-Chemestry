@@ -8,13 +8,8 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras import optimizers
 from matplotlib import pyplot as plt
-
-
-def get_dataset():
-    data = pd.read_csv("data.csv")
-    X = data[["Temperature", "Pressure"]].to_numpy()
-    y = data[["Density"]].to_numpy()  # ,"GL"
-    return X, y
+from normalize import normalize_data, denormalize_data
+from get_dataset import get_dataset
 
 
 def get_model(n_inputs, n_outputs):
@@ -51,26 +46,6 @@ def evaluate_model(X, y):
             model2 = model
     plt.show()
     return mae, mape, model2
-
-
-def normalize_data(X):
-    nX = X.copy()
-    minsX = []
-    maxsX = []
-    for j in range(0, X.shape[1]):
-        minsX.append(min(X[:, j]))
-        maxsX.append(max(X[:, j]))
-        for i in range(0, X.shape[0]):
-            nX[i, j] = (X[i, j] - minsX[j]) / (maxsX[j] - minsX[j]) * 0.9 + 0.1
-    return nX, minsX, maxsX
-
-
-def denormalize_data(X, minsX, maxsX):
-    dX = X.copy()
-    for j in range(0, X.shape[1]):
-        for i in range(0, X.shape[0]):
-            dX[i, j] = ((X[i, j] - 0.1) / 0.9) * (maxsX[j] - minsX[j]) + minsX[j]
-    return dX
 
 
 X, y = get_dataset()
