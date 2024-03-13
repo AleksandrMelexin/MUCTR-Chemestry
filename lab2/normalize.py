@@ -1,7 +1,5 @@
-import pandas as pd
-
 def normalize_data(X):
-  nX=X.copy();
+  nX=X.copy()
   minsX=[]
   maxsX=[]
 
@@ -14,7 +12,7 @@ def normalize_data(X):
   return nX,minsX,maxsX
 
 def normalize_one_row(X, all_data_X):
-  nX=X.copy();
+  nX=X.copy()
   minsX=[]
   maxsX=[]
 
@@ -27,7 +25,7 @@ def normalize_one_row(X, all_data_X):
   return nX,minsX,maxsX
 
 def denormalize_data(X,minsX,maxsX):
-  dX=X.copy();
+  dX=X.copy()
   for j in range(0,X.shape[1]):
     for i in range(0,X.shape[0]):
       dX[i,j]=((X[i,j]-0.1)/0.9)*(maxsX[j]-minsX[j])+minsX[j]
