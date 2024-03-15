@@ -32,10 +32,10 @@ for i in range(119, 136):
     temps.append([dnX[i][0]])
     ydata[0].append(dny[i][0])
     ydata[1].append(new_y[i][0])
-ax[0].plot(ydata[0], temps, "ro") # помещаем на график экспериментальные данные при p = 4.14 бар
-ax[0].plot(ydata[1], temps) # помещаем на график предсказанные нейросетью данные при p = 4.14 бар
+ax[0].plot(temps, ydata[0], "ro") # помещаем на график экспериментальные данные при p = 4.14 бар
+ax[0].plot(temps, ydata[1]) # помещаем на график предсказанные нейросетью данные при p = 4.14 бар
 
-ax[0].plot(new_y_pr[0], prDnX[0][0], "bo") # ставим на график точку предсказанную неёросетью
+ax[0].plot(prDnX[0][0], new_y_pr[0], "bo") # ставим на график точку предсказанную неёросетью
 
 ax[1].set_title("P = const = 2.72 бар")
 temps = []
@@ -44,10 +44,10 @@ for i in range(85, 102):
     temps.append([dnX[i][0]])
     ydata[0].append(dny[i][0])
     ydata[1].append(new_y[i][0])
-ax[1].plot(ydata[0], temps, "ro") # помещаем на график экспериментальные данные при p = 2.72 бар
-ax[1].plot(ydata[1], temps) # помещаем на график предсказанные нейросетью данные при p = 2.72 бар
-plt.xlabel("p, кг/м^3")
-plt.ylabel("T, K")
+ax[1].plot(temps, ydata[0], "ro") # помещаем на график экспериментальные данные при p = 2.72 бар
+ax[1].plot(temps, ydata[1]) # помещаем на график предсказанные нейросетью данные при p = 2.72 бар
+plt.ylabel("p, кг/м^3")
+plt.xlabel("T, K")
 plt.show()
 
 
