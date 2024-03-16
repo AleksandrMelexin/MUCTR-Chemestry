@@ -1,14 +1,14 @@
 from thermo import ChemicalConstantsPackage, CEOSGas, CEOSLiquid, PRMIX, FlashVL, FlashVLN, FlashPureVLS
 from thermo.interaction_parameters import IPDB
 # Load constants and properties
-constants, properties = ChemicalConstantsPackage.from_IDs(['acetone', 'water'])
+constants, properties = ChemicalConstantsPackage.from_IDs(['acetone', '1-butanol'])
 # Objects are initialized at a particular condition
 T = 333.15
 P = 1e5
 zs = [.5, .5]
 
 # Use Peng-Robinson for both the vapor and the liquid phases
-k12 = -0.247
+k12 = 0.03
 kijs = [[0, k12],
         [k12, 0]]
 print(k12)
