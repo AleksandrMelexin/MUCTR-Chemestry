@@ -1,6 +1,5 @@
 import csv
 
-
 f = open("temp.txt", "r")
 T = list(map(float, f.readline().split()))
 f = open("pressure.txt", "r")
@@ -23,4 +22,4 @@ with open('data.txt', 'r') as in_file:
     with open('../data.csv', 'w') as out_file:
         writer = csv.writer(out_file)
         writer.writerow(('Temperature', 'Pressure', 'Density'))
-        writer.writerows(lines)        
+        writer.writerows(lines)
