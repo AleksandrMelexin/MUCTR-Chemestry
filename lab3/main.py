@@ -73,15 +73,13 @@ press_new = (gamma1 * x1_new * press_a) / y1_new
 
 # построение графиков
 plt.figure()
-plt.title("Диаграмма x от y")
+plt.title("Диаграмма y от x")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.plot(x1_new, y1_new)
 plt.scatter(x1, y1, 5, "green")
-plt.plot(x2_new, y2_new)
-plt.scatter(x2, y2, 5, "red")
 plt.figure()
-plt.title("Диаграмма P от x и y")
+plt.title("Диаграмма P от x и y для этанола")
 plt.ylabel("P, bar")
 plt.plot(x1_new, press_new)
 plt.plot(y1_new, press_new)
