@@ -9,13 +9,10 @@ zs = [.5, .5]
 
 print(constants)
 
-# Use Peng-Robinson for the vapor phase
-#k12 = 0.03
-#kijs = [[0, k12],
-#        [k12, 0]]
-#print(k12)
+
 eos_kwargs = dict(Tcs=constants.Tcs, Pcs=constants.Pcs, omegas=constants.omegas) #, kijs=kijs
 gas = CEOSGas(PRMIX, HeatCapacityGases=properties.HeatCapacityGases, eos_kwargs=eos_kwargs)
+liquid = CEOSLiquid(PRMIX, eos_kwargs, HeatCapacityGases=properties.HeatCapacityGases, T=T, P=P, zs=zs)
 
 # Configure the activity model
 GE = UNIFAC.from_subgroups(chemgroups=constants.UNIFAC_Dortmund_groups, version=1, T=T, xs=zs,
@@ -30,6 +27,14 @@ liquid = GibbsExcessLiquid(
 	T=T, P=P, zs=zs)
 
 flasher = FlashVL(constants, properties, liquid=liquid, gas=gas)
+# Create a T-xy plot at P bar
+_ = flasher.plot_Txy(P=P, pts=100)
+
+# Create a P-xy plot at T Kelvin
+_ = flasher.plot_Pxy(T=T, pts=100)
+
+# Create a xy diagram at T Kelvin
+_ = flasher.plot_xy(T=T, pts=100)
 res = flasher.flash(T=360, P=P, zs=[0.2, 0.8])
 if res.VF > 0:
   print("Vapour exists")

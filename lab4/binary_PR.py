@@ -3,7 +3,7 @@ from thermo.interaction_parameters import IPDB
 # Load constants and properties
 constants, properties = ChemicalConstantsPackage.from_IDs(['acetone', '1-butanol'])
 # Objects are initialized at a particular condition
-T = 333.15
+T = 372
 P = 1e5
 zs = [.5, .5]
 
