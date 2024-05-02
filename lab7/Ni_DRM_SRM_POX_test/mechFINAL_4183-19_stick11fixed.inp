@@ -1,0 +1,238 @@
+MATERIAL NICAT
+SITE/NICKEL/ SDEN/2.66e-09/
+Ni(S) H2O(S) H(S) COOH(S) OH(S) CO(S) C(S) CH3(S) CH2(S) CH(S) CH4(S) O(S) CO2(S) CHO(S) HCO(S)
+END
+!ALIAS (S) Ni:1
+THERMO ALL
+   300.0   1000.0   5000.0
+CH4                     C   1H   4    0    0      300.00   5000.00 1000.00     1
+ 0.16834788E+01 0.10237236E-01-0.38751286E-05 0.67855849E-09-0.45034231E-13    2
+-0.10080787E+05 0.96233950E+01 0.77874148E+00 0.17476683E-01-0.27834090E-04    3
+ 0.30497080E-07-0.12239307E-10-0.98252285E+04 0.13722195E+02                   4
+O2                      O   2    0    0    0      300.00   5000.00 1000.00     1
+ 0.36122139E+01 0.74853166E-03-0.19820647E-06 0.33749008E-10-0.23907374E-14    2
+-0.11978151E+04 0.36703307E+01 0.37837135E+01-0.30233634E-02 0.99492751E-05    3
+-0.98189101E-08 0.33031825E-11-0.10638107E+04 0.36416345E+01                   4
+CO                      C   1O   1    0    0      300.00   5000.00 1000.00     1
+ 0.30250781E+01 0.14426885E-02-0.56308278E-06 0.10185813E-09-0.69109516E-14    2
+-0.14268350E+05 0.61082177E+01 0.32624517E+01 0.15119409E-02-0.38817552E-05    3
+ 0.55819442E-08-0.24749512E-11-0.14310539E+05 0.48488970E+01                   4
+CO2                     C   1O   2    0    0      300.00   5000.00 1000.00     1
+ 0.44536228E+01 0.31401687E-02-0.12784105E-05 0.23939967E-09-0.16690332E-13    2
+-0.48966961E+05-0.95539588E+00 0.22757246E+01 0.99220723E-02-0.10409113E-04    3
+ 0.68666868E-08-0.21172801E-11-0.48373141E+05 0.10188488E+02                   4
+H2                      H   2    0    0    0      300.00   5000.00 1000.00     1
+ 0.30667095E+01 0.57473755E-03 0.13938319E-07-0.25483518E-10 0.29098574E-14    2
+-0.86547412E+03-0.17798424E+01 0.33553514E+01 0.50136144E-03-0.23006908E-06    3
+-0.47905324E-09 0.48522585E-12-0.10191626E+04-0.35477228E+01                   4
+H2O                     H   2O   1    0    0      300.00   5000.00 1000.00     1
+ 0.26110472E+01 0.31563130E-02-0.92985438E-06 0.13331538E-09-0.74689351E-14    2
+-0.29868167E+05 0.72091268E+01 0.41677234E+01-0.18114970E-02 0.59471288E-05    3
+-0.48692021E-08 0.15291991E-11-0.30289969E+05-0.73135474E+00                   4
+Ni(S)                   Ni  1    0    0    0      300.00   3000.00 1000.00     1
+ 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00    2
+ 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00    3
+ 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00                   4
+END
+REACTIONS  KJOULES/MOLE
+!**************** TC residuals *****************
+! Reaction 1 for deltaH 1.12951e+07
+! Reaction 1 for deltaS 6.99302
+! Reaction 1 for deltaG 9.21143e+06
+! Reaction 3 for deltaH 2.97483e+06
+! Reaction 3 for deltaS 26.7009
+! Reaction 3 for deltaG 1.66215e+07
+! Reaction 5 for deltaH 1.02019e+06
+! Reaction 5 for deltaS 16.1168
+! Reaction 5 for deltaG 8.10108e+06
+! Reaction 7 for deltaH 93053.2
+! Reaction 7 for deltaS 15.0069
+! Reaction 7 for deltaG 1.56637e+07
+! Reaction 9 for deltaH 5.58203e+06
+! Reaction 9 for deltaS 3.51033
+! Reaction 9 for deltaG 8.12266e+06
+! Reaction 11 for deltaH 876374
+! Reaction 11 for deltaS 7.88255
+! Reaction 11 for deltaG 8.64451e+06
+! Reaction 13 for deltaH 1.63333e+06
+! Reaction 13 for deltaS 2.55441
+! Reaction 13 for deltaG 4.71344e+06
+! Reaction 15 for deltaH 797074
+! Reaction 15 for deltaS 3.52094
+! Reaction 15 for deltaG 2.54671e+06
+! Reaction 17 for deltaH 43564.5
+! Reaction 17 for deltaS 1.26908
+! Reaction 17 for deltaG 1.22689e+06
+! Reaction 19 for deltaH 100888
+! Reaction 19 for deltaS 3.06687
+! Reaction 19 for deltaG 2.06144e+06
+! Reaction 21 for deltaH 941712
+! Reaction 21 for deltaS 6.11225
+! Reaction 21 for deltaG 5.66768e+06
+! Reaction 23 for deltaH 779911
+! Reaction 23 for deltaS 29.4424
+! Reaction 23 for deltaG 2.39064e+07
+! Reaction 25 for deltaH 158822
+! Reaction 25 for deltaS 1.50957
+! Reaction 25 for deltaG 930185
+! Reaction 27 for deltaH 457607
+! Reaction 27 for deltaS 1.35909
+! Reaction 27 for deltaG 453404
+! Reaction 29 for deltaH 2.07264e+06
+! Reaction 29 for deltaS 13.3853
+! Reaction 29 for deltaG 1.87468e+07
+! Reaction 31 for deltaH 1.52094e+06
+! Reaction 31 for deltaS 0.278112
+! Reaction 31 for deltaG 2.44189e+06
+! Reaction 33 for deltaH 2.38141e+06
+! Reaction 33 for deltaS 3.89968
+! Reaction 33 for deltaG 9.60238e+06
+! Reaction 35 for deltaH 168570
+! Reaction 35 for deltaS 2.87956
+! Reaction 35 for deltaG 1.50044e+06
+! Reaction 37 for deltaH 1.67706e+06
+! Reaction 37 for deltaS 16.546
+! Reaction 37 for deltaG 2.34812e+07
+! Reaction 39 for deltaH 66715.9
+! Reaction 39 for deltaS 0.21636
+! Reaction 39 for deltaG 330526
+! Reaction 41 for deltaH 295001
+! Reaction 41 for deltaS 1.55368
+! Reaction 41 for deltaG 2.30549e+06
+! Reaction 43 for deltaH 1.54927e+06
+! Reaction 43 for deltaS 11.4434
+! Reaction 43 for deltaG 7.13015e+06
+! Reaction 45 for deltaH 699108
+! Reaction 45 for deltaS 13.7919
+! Reaction 45 for deltaG 2.09135e+07
+! Reaction 47 for deltaH 1.81628e+06
+! Reaction 47 for deltaS 2.93234
+! Reaction 47 for deltaG 4.06216e+06
+! Reaction 49 for deltaH 505861
+! Reaction 49 for deltaS 4.97561
+! Reaction 49 for deltaG 3.76788e+06
+! Reaction 51 for deltaH 4.76491e+06
+! Reaction 51 for deltaS 31.2534
+! Reaction 51 for deltaG 5.25812e+07
+! Total for deltaH: 4.42722e+07
+! Total for deltaS: 228.2
+! Total for deltaG: 2.54735e+08
+!***********************************************
+!#1
+2Ni(S) + H2 => 2H(S)  8.830037e-02 0.000000e+00 1.074237e+00
+ STICK 
+!#2
+2H(S) => 2Ni(S) + H2  7.631992e+20 0.000000e+00 9.920900e+01
+!#3
+2Ni(S) + O2 => 2O(S)  6.577975e-02 -2.060000e-01 1.361937e+00
+ STICK 
+!#4
+2O(S) => 2Ni(S) + O2  3.564000e+21 0.000000e+00 4.682465e+02
+!#5
+Ni(S) + CH4 => CH4(S)  2.255694e-02 0.000000e+00 0.000000e+00
+ STICK 
+!#6
+CH4(S) => Ni(S) + CH4  2.611500e+16 0.000000e+00 3.411609e+01
+!#7
+Ni(S) + H2O => H2O(S)  1.959185e-01 0.000000e+00 0.000000e+00
+ STICK 
+!#8
+H2O(S) => Ni(S) + H2O  1.338647e+12 0.000000e+00 6.040960e+01
+!#9
+Ni(S) + CO2 => CO2(S)  2.999292e-06 0.000000e+00 0.000000e+00
+ STICK 
+!#10
+CO2(S) => Ni(S) + CO2  1.648125e+08 0.000000e+00 2.807564e+01
+!#11
+Ni(S) + CO => CO(S)  1.000e+00 0.000000e+00 0.000000e+00
+ STICK 
+!#12
+CO(S) => Ni(S) + CO  5.450211e+11 0.000000e+00 1.129453e+02
+ COV /CO(S) 0 0 -50/
+!#13
+O(S) + H(S) => OH(S) + Ni(S)  1.048937e+24 -3.509792e-01 1.078068e+02
+!#14
+OH(S) + Ni(S) => O(S) + H(S)  6.761992e+20 0.000000e+00 3.364400e+01
+!#15
+OH(S) + H(S) => H2O(S) + Ni(S)  2.973489e+20 4.179976e-02 3.993947e+01
+!#16
+H2O(S) + Ni(S) => OH(S) + H(S)  9.941543e+21 0.000000e+00 8.894300e+01
+!#17
+OH(S) + OH(S) => O(S) + H2O(S)  6.011381e+20 7.878632e-02 9.407247e+01
+!#18
+O(S) + H2O(S) => OH(S) + OH(S)  3.815345e+24 0.000000e+00 2.168435e+02
+!#19
+O(S) + C(S) => CO(S) + Ni(S)  2.434433e+23 0.000000e+00 1.461754e+02
+!#20
+CO(S) + Ni(S) => O(S) + C(S)  4.550903e+13 0.000000e+00 1.157477e+02
+ COV /CO(S) 0 0 -50/
+!#21
+O(S) + CO(S) => CO2(S) + Ni(S)  5.800029e+19 0.000000e+00 1.245495e+02
+ COV /CO(S) 0 0 -50/
+!#22
+CO2(S) + Ni(S) => O(S) + CO(S)  1.549335e+23 0.000000e+00 8.926057e+01
+!#23
+HCO(S) + Ni(S) => CO(S) + H(S)  8.607743e+21 0.000000e+00 2.553427e+00
+ COV /CO(S) 0 0 50/
+!#24
+CO(S) + H(S) => HCO(S) + Ni(S)  1.336335e+20 0.000000e+00 1.355210e+02
+!#25
+HCO(S) + Ni(S) => O(S) + CH(S)  2.338165e+14 0.000000e+00 8.529171e+01
+!#26
+O(S) + CH(S) => HCO(S) + Ni(S)  1.338460e+21 0.000000e+00 1.104389e+02
+!#27
+CH4(S) + Ni(S) => CH3(S) + H(S)  1.278090e+21 2.189621e-02 5.459521e+01
+!#28
+CH3(S) + H(S) => CH4(S) + Ni(S)  4.810000e+21 0.000000e+00 6.561039e+01
+!#29
+CH3(S) + Ni(S) => CH2(S) + H(S)  2.909122e+24 -2.426129e-03 1.017675e+02
+!#30
+CH2(S) + H(S) => CH3(S) + Ni(S)  1.030335e+23 0.000000e+00 6.120500e+01
+!#31
+CH2(S) + Ni(S) => CH(S) + H(S)  2.106711e+24 2.651197e-01 9.247140e+01
+!#32
+CH(S) + H(S) => CH2(S) + Ni(S)  3.326608e+24 0.000000e+00 8.066548e+01
+!#33
+CH(S) + Ni(S) => C(S) + H(S)  2.746826e+21 5.011233e-01 2.294533e+01
+!#34
+C(S) + H(S) => CH(S) + Ni(S)  7.878543e+23 0.000000e+00 1.611935e+02
+!#35
+O(S) + CH4(S) => CH3(S) + OH(S)  8.052422e+24 -9.587179e-02 8.648201e+01
+!#36
+CH3(S) + OH(S) => O(S) + CH4(S)  8.507687e+22 0.000000e+00 2.359135e+01
+!#37
+O(S) + CH3(S) => CH2(S) + OH(S)  1.638132e+25 5.494628e-02 1.286276e+02
+!#38
+CH2(S) + OH(S) => O(S) + CH3(S)  4.178985e+21 0.000000e+00 1.504800e+01
+!#39
+O(S) + CH2(S) => CH(S) + OH(S)  1.317972e+25 9.851160e-02 1.300484e+02
+!#40
+CH(S) + OH(S) => O(S) + CH2(S)  4.644928e+22 0.000000e+00 4.433664e+01
+!#41
+O(S) + CH(S) => C(S) + OH(S)  2.337846e+21 2.435751e-01 5.374395e+01
+!#42
+C(S) + OH(S) => O(S) + CH(S)  8.193146e+20 0.000000e+00 1.180862e+02
+!#43
+CO(S) + CO(S) => CO2(S) + C(S)  1.636954e+14 3.587057e-01 2.434753e+02
+ COV /CO(S) 0 0 -100/
+!#44
+CO2(S) + C(S) => CO(S) + CO(S)  2.431335e+28 0.000000e+00 2.386141e+02
+!#45
+COOH(S) + Ni(S) => CO2(S) + H(S)  1.610697e+20 3.014713e-01 3.128530e+01
+!#46
+CO2(S) + H(S) => COOH(S) + Ni(S)  6.501547e+24 0.000000e+00 1.133440e+02
+!#47
+COOH(S) + Ni(S) => CO(S) + OH(S)  8.561455e+23 -3.661136e-01 5.488468e+01
+!#48
+CO(S) + OH(S) => COOH(S) + Ni(S)  1.264507e+21 0.000000e+00 9.794034e+01
+ COV /CO(S) 0 0 -50/
+!#49
+C(S) + OH(S) => CO(S) + H(S)  3.134134e+25 2.150427e-02 6.309322e+01
+!#50
+CO(S) + H(S) => C(S) + OH(S)  1.174000e+18 0.000000e+00 1.065713e+02
+ COV /CO(S) 0 0 -50/
+!#51
+COOH(S) + H(S) => HCO(S) + OH(S)  1.723028e+23 -9.990440e-01 1.050314e+02
+!#52
+HCO(S) + OH(S) => COOH(S) + H(S)  3.462433e+20 0.000000e+00 1.511945e+01
+END
