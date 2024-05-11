@@ -1,0 +1,3 @@
+/dev/shm
+/dev/shm
+/run/lock

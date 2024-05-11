@@ -1,0 +1,37 @@
+RKP
+0 12 0.01 ni_drm_70cells.txt gas.inp mech.inp 16 44 20 28 50 20 120
+CASE CSTRCASCADE 1 Honeycomb 1D 1 CO O2 CO2 0.04 0.02 0.0 N2 0.13 0.016 2.77e-08 Rh(S) 1.0 1.04466E-05 6.12E+05 0.42 70 70 150
+CONVERSION_molar_conc_e 1 620	1
+CONVERSION_molar_conc_e 1 640	3
+CONVERSION_molar_conc_e 1 660	7
+CONVERSION_molar_conc_e 1 680	26
+CONVERSION_molar_conc_e 1 690	50
+CONVERSION_molar_conc_e 1 695	90
+CONVERSION_molar_conc_e 1 700	99.9
+ENTROPY_PRODUCTION 1
+y y n
+CHECK_LIMITATIONS_LEVEL 0
+ADDEQUATIONS dVdVr
+UNITS E KJOULES/MOLE
+PARAMETERS
+1 y n n 0 0 0
+0 1
+2 y n y 0 0 0
+1e11 1e14
+200 400
+3 y n n 0 0 0
+0 1
+4 y n y 0 0 0
+1e11 1e14
+80 140
+5 y n y 0 0 0
+1e10 1e13
+80 140
+6 y n y 0 0 0
+1e12 1e15
+30 180
+7 y n n 0 0 0
+1e-3 0.6
+8 y n y 0 0 0
+5e10 1e13
+20 150

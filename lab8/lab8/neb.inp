@@ -1,0 +1,15 @@
+!BLYP D3BJ def2-SVP NEB-TS NumFreq xyzfile
+
+%Freq
+Temp 298.15
+end
+
+%pal
+nprocs 6
+end
+
+%NEB
+NEB_END_XYZFILE "propan2ol2.xyz"
+end
+
+*xyzfile 0 1 acetone.xyz
