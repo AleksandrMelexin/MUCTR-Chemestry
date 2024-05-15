@@ -1,0 +1,18 @@
+iteration 1
+sum residuals = 2321.36  td_part = 3.99502e-10  entr_prod_react = 0.00170194  -entr_change_external = 0.00169946  entr_part_total = 0.0190726 all_converged = true fitness = 2321.36
+iteration 2
+sum residuals = 204.704  td_part = 5.77048e-11  entr_prod_react = 0.00984818  -entr_change_external = 0.00981612  entr_part_total = 5.75441 all_converged = true fitness = 204.704
+iteration 4
+sum residuals = 78.8453  td_part = 5.78173e-11  entr_prod_react = 0.0108289  -entr_change_external = 0.01079  entr_part_total = 8.33078 all_converged = true fitness = 78.8453
+iteration 6
+sum residuals = 76.5024  td_part = 2.13442e-12  entr_prod_react = 0.0109242  -entr_change_external = 0.0108879  entr_part_total = 7.46275 all_converged = true fitness = 76.5024
+iteration 7
+sum residuals = 52.6047  td_part = 2.96953e-10  entr_prod_react = 0.0136472  -entr_change_external = 0.013584  entr_part_total = 15.9877 all_converged = true fitness = 52.6047
+iteration 8
+sum residuals = 19.4493  td_part = 5.86249e-11  entr_prod_react = 0.0127687  -entr_change_external = 0.0127075  entr_part_total = 15.305 all_converged = true fitness = 19.4493
+iteration 10
+sum residuals = 19.4377  td_part = 2.49814e-11  entr_prod_react = 0.0124198  -entr_change_external = 0.0123666  entr_part_total = 11.9183 all_converged = true fitness = 19.4377
+iteration 12
+sum residuals = 16.6922  td_part = 5.93033e-11  entr_prod_react = 0.0117015  -entr_change_external = 0.0116581  entr_part_total = 9.35633 all_converged = true fitness = 16.6922
+iteration 17
+sum residuals = 11.8089  td_part = 5.78743e-11  entr_prod_react = 0.0118746  -entr_change_external = 0.011833  entr_part_total = 8.66762 all_converged = true fitness = 11.8089
